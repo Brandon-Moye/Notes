@@ -33,11 +33,24 @@ _backend with api routes, user auth, graph ql without hosting a server_
 
 _serverless functions to use Realm as the backend API connecting to the Atlas database and supplying data to the application front end_
 
-Functionality
+- Functionalities
+  - Functions
+    - build out APIs for the app
+  - User Auth
+    - internal or outside providers
+  - Triggers
+  - execute f(x)s based on events in the DB, user auth events, or schedules
+  - Data Access Control
+  - 3rd Party Services
+  - GraphQL
+- Realm needs to be connected to a Cluster
 
-- Functions
-- User Auth
-- Triggers
-- Data Access Control
-- 3rd Party Services
-- GraphQL
+| Save                | Deploy          |
+| ------------------- | --------------- |
+| creates a dev draft | makes it public |
+
+- For authenticaion you will probably want to turn on anynomous authentication in Realm
+
+https://www.youtube.com/watch?v=Evp3xTzWCu4&list=PL4RCxklHWZ9v2lcat4oEVGQhZg6r4IQGV&index=4
+
+5:26
