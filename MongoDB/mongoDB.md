@@ -11,3 +11,9 @@ Purpose: document learning while creating Bridge with MongoDB
 | Table    | Collection |
 | Row      | Document   |
 | Column   | Field      |
+
+### Atlas
+
+- Configure Database Access for Authentication methods and allow anonymous for production
+
+### Compass
