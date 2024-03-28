@@ -20,5 +20,4 @@ Purpose: document learning while creating Bridge with MongoDB
 ### Compass
 
 - GUI interface for MonogDB
-
-* easy way to upload new datasets
+- easy way to upload new datasets
