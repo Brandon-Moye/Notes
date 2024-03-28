@@ -81,7 +81,10 @@ useEffect(async() => {
   try {
     const user = await app.logIn(credentials);
     const allProducts = await user.functions.getAllProducts
-  }
   //getAllProducts was a servless function written in the Realm exampe
+  //you would probably store the allProducts variable with a useState
+  } catch (error) {
+
+  }
 })
 ```
