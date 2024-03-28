@@ -32,3 +32,12 @@ Purpose: document learning while creating Bridge with MongoDB
 _backend with api routes, user auth, graph ql without hosting a server_
 
 _serverless functions to use Realm as the backend API connecting to the Atlas database and supplying data to the application front end_
+
+Functionality
+
+- Functions
+- User Auth
+- Triggers
+- Data Access Control
+- 3rd Party Services
+- GraphQL
