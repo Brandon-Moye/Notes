@@ -76,7 +76,7 @@ code to connect Realm App ID:
 import * as Realm from "realm-web"
 useEffect(async() => {
   const REALM_APP_ID = "" //get from products bar, put in .env file
-  const app = new.Realm.App({id: REALM_APP_ID});
+  const app = new Realm.App({id: REALM_APP_ID});
   const credentials = Realm.Credentials.anonymous();
   try {
     const user = await app.logIn(credentials);
