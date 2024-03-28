@@ -68,3 +68,20 @@ return collection.findOne({_id: BSON.ObjectId(arg)})
 
 //arg is what is passed from the function call, this would be a specific ID
 ```
+
+#### Realm - SDKs
+- install SDK for your app and add the anonymous user function to get it connected
+code to connect Realm App ID:
+```
+import * as Realm from "realm-web"
+useEffect(async() => {
+  const REALM_APP_ID = "" //get from products bar, put in .env file
+  const app = new.Realm.App({id: REALM_APP_ID});
+  const credentials = Realm.Credentials.anonymous();
+  try {
+    const user = await app.logIn(credentials);
+    const allProducts = await user.functions.getAllProducts
+  }
+  //getAllProducts was a servless function written in the Realm exampe
+})
+```
