@@ -55,5 +55,16 @@ _serverless functions to use Realm as the backend API connecting to the Atlas da
 
 Basic serverless function that provides an API route to return all of our products:
 ```
+exports = function(arg) {
 let collection = context.services.get("mongodb-atlas").db("store").collection("products");
+return collection.find({})
+}
+```
+return one specific product:
+```
+exports = function(arg) {
+let collection = context.services.get("mongodb-atlas").db("store").collection("products");
+return collection.findOne({_id: BSON.ObjectId(arg)})
+
+//arg is what is passed from the function call, this would be a specific ID
 ```
