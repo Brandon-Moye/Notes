@@ -51,6 +51,9 @@ _serverless functions to use Realm as the backend API connecting to the Atlas da
 
 - For authenticaion you will probably want to turn on anynomous authentication in Realm
 
-https://www.youtube.com/watch?v=Evp3xTzWCu4&list=PL4RCxklHWZ9v2lcat4oEVGQhZg6r4IQGV&index=4
+#### Realm - Functions
 
-5:26
+Basic serverless function that provides an API route to return all of our products:
+```
+let collection = context.services.get("mongodb-atlas").db("store").collection("products");
+```
